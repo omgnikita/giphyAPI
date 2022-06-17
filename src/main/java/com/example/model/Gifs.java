@@ -1,12 +1,12 @@
-package com.example.demoAlpha.model;
+package com.example.model;
 
+import com.example.services.HttpRequests;
+import com.example.services.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.utils.URIBuilder;
-import org.example.services.HttpRequests;
-import org.example.services.JsonParser;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

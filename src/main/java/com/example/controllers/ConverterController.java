@@ -1,7 +1,7 @@
-package com.example.demoAlpha.controllers;
+package com.example.controllers;
 
-import com.example.demoAlpha.model.Currencies;
-import com.example.demoAlpha.model.Currency;
+import com.example.model.Currencies;
+import com.example.model.Currency;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

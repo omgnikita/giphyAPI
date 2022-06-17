@@ -1,7 +1,7 @@
-package com.example.demoAlpha.controllers;
+package com.example.controllers;
 
-import com.example.demoAlpha.model.Currencies;
-import com.example.demoAlpha.model.Gifs;
+import com.example.model.Currencies;
+import com.example.model.Gifs;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

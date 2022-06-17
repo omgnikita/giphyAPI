@@ -1,4 +1,4 @@
-package com.example.demoAlpha.services;
+package com.example.services;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

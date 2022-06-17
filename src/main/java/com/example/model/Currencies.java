@@ -1,7 +1,7 @@
-package com.example.demoAlpha.model;
+package com.example.model;
 
-import com.example.demoAlpha.services.HttpRequests;
-import com.example.demoAlpha.services.JsonParser;
+import com.example.services.HttpRequests;
+import com.example.services.JsonParser;
 import org.apache.http.HttpResponse;
 
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Currencies {
 	private static final String CURRENCIES_BASE_URL = "https://openexchangerates.org/";
 	private static final Map<String, String> ALL_CURRENCIES = new HashMap<>();
 
-	public static List<Currency> getAllCurrencies() throws IOException {
+	public static List<com.example.model.Currency> getAllCurrencies() throws IOException {
 		Map<String, Object> header = new HashMap<>();
 		String url;
 		header.put("Authorization", "Token " + CURRENCIES_APP_ID);
@@ -27,7 +27,7 @@ public class Currencies {
 
 		Map<String, String> map = JsonParser.convertJsonToMap(responseBodyString, String.class);
 		ALL_CURRENCIES.putAll(map);
-		List<Currency> currencyList = new ArrayList<>();
+		List<com.example.model.Currency> currencyList = new ArrayList<>();
 		map.forEach((k, v) -> currencyList.add(new Currency(k,v)));
 
 		return currencyList;

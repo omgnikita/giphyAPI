@@ -1,0 +1,12 @@
+#image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+select, input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
